@@ -20,7 +20,12 @@ body {
     background-color: white;
     border: 3px ridge #808080;
 }
-
+.video-card iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    display: block;
+}
 header {
     background: linear-gradient(to bottom, #000080, #0000aa);
     color: white;
