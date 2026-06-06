@@ -147,3 +147,16 @@ a {
 a:visited {
     color: #800080;
 }
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 40px 0;
+}
+
+.hero img {
+    width: min(900px, 95%);
+    height: auto;
+    border-radius: 10px;
+}
