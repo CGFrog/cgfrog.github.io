@@ -44,8 +44,10 @@ header h1 {
 }
 
 nav {
+    position: sticky;
     background-color: #dcdcdc;
     padding: 8px;
+    top: 0;
     text-align: center;
     border-bottom: 2px solid #808080;
 }
