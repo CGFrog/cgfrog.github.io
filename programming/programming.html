@@ -9,147 +9,110 @@
 </head>
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <header>
+    <header id="top">
+        <div>
             <h1>Ian Cooper - Programming</h1>
+            <div class="subtitle">Computer Science • Mathematics • 3D Graphics • Music</div>
+        </div>
+    </header>
 
-            <div class="subtitle">
-                Computer Science • Mathematics • 3D Graphics • Music
-            </div>
-        </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../art/visual.html">3D Art</a>
+        <a href="programming.html" aria-current="page">Programming</a>
+        <a href="../math/math.html">Mathematics</a>
+        <a href="../games/games.html">Games</a>
+        <a href="../art/music.html">Music</a>
+        <a href="mailto:iancoop25@gmail.com">Contact</a>
+    </nav>
 
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="../art/visual.html">3D Art</a>
-            <a href="programming.html">Programming</a>
-            <a href="../math/math.html">Mathematics</a>
-            <a href="../games/games.html">Games</a>
-            <a href="../art/music.html">Music</a>
-            <a href="../misc/misc.html">Misc</a>
-            <a href="mailto:iancoop25@gmail.com">Contact</a>
-        </nav>
+    <main class="content-grid">
 
         <section>
+            <h2>Programming</h2>
             <div class="card">
-                <h2>Programming</h2>
                 <p>
-                    My primary interest is in computer graphics but I also enjoy working on problems in 
+                    My primary interest is in computer graphics but I also enjoy working on problems in
                     optimization, machine learning, and formal language design. Essentially, if it is a fun or meaningful problem, I am down to work on it.
                 </p>
             </div>
         </section>
 
         <section>
-            <h2>Projects</h2>
-
-            <div class="gallery">
-
-                <div class="art-card">
-                    <img src="images/zenith.png"
-                         alt="Zenith Engine">
-
-                    <div class="art-title">
-                        <b>Zenith Engine</b>
-                        <br><br>
-
-                        Custom OpenGL-based game engine with rendering,
-                        scene management, asset loading, and camera movement.
-
-                        <br><br>
-                        <a href="https://github.com/CGFrog/Zenith">GitHub</a>
-                    </div>
-                </div>
-
-                <div class="art-card">
-                    <img src="images/dvel.png"
-                         alt="DVEL">
-
-                    <div class="art-title">
-                        <b>DVEL</b>
-                        <br><br>
-
-                        Declarative Video Editing Language (DVEL) is a language developed to easily edit large amount of videos in a repeated format.
-
-                        <br><br>
-
-                        Product Owner
-
-                        <br><br>
-
-                        <a href="https://github.com/Declarative-Video-Editing-Language/DVEL">GitHub</a>
-                    </div>
-                </div>
-
-                <div class="art-card">
-                    <img src="images/fsim.png"
-                         alt="Federated Learning Simulator">
-
-                    <div class="art-title">
-                        <b>Federated Learning Simulator</b>
-                        <br><br>
-
-                        Research platform for studying Byzantine-resilient
-                        decentralized and federated learning systems.
-
-                        <br><br>
-                        <a href="https://github.com/CGFrog/redundancy-byzantine">GitHub</a>
-                    </div>
-                </div>
-
-                <div class="art-card">
-                    <img src="images/graphing.png"
-                         alt="Graphing Calculator">
-
-                    <div class="art-title">
-                        <b>Graphing Calculator</b>
-                        <br><br>
-
-                        Graphing calculator that supports most single variable functions you would see in a calculus course.
-
-                        <br><br>
-
-                        <a href="https://github.com/CGFrog/graphing_calculator">GitHub</a>
-                    </div>
-                </div>
-
-                <div class="art-card">
-                    <img src="images/procomp.jfif"
-                         alt="Programming Competition Leaderboard">
-
-                    <div class="art-title">
-                        <b>Programming Competition Leaderboard</b>
-                        <br><br>
-
-                        Leaderboard used
-                        for university programming competitions.
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
+            <h2>Links</h2>
             <div class="card">
-                <h2>Links</h2>
-
                 <ul>
-                    <li>
-                        <a href="https://github.com/cgfrog">
-                            GitHub
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="mailto:iancoop25@gmail.com">
-                            Email
-                        </a>
-                    </li>
+                    <li><a href="https://github.com/cgfrog">GitHub</a></li>
+                    <li><a href="mailto:iancoop25@gmail.com">Email</a></li>
                 </ul>
             </div>
         </section>
 
-    </div>
+        <section class="wide">
+            <h2>Projects</h2>
+            <div class="card">
+                <div class="gallery">
+
+                    <div class="art-card">
+                        <img src="images/zenith.png" alt="Zenith Engine">
+                        <div class="art-title">
+                            <p><b>Zenith Engine</b></p>
+                            <p>Custom OpenGL-based game engine with rendering, scene management, asset loading, and camera movement.</p>
+                            <p><a href="https://github.com/CGFrog/Zenith">GitHub</a></p>
+                        </div>
+                    </div>
+
+                    <div class="art-card">
+                        <img src="images/dvel.png" alt="DVEL">
+                        <div class="art-title">
+                            <p><b>DVEL</b></p>
+                            <p>Declarative Video Editing Language (DVEL) is a language developed to easily edit large amount of videos in a repeated format.</p>
+                            <p>Product Owner</p>
+                            <p><a href="https://github.com/Declarative-Video-Editing-Language/DVEL">GitHub</a></p>
+                        </div>
+                    </div>
+
+                    <div class="art-card">
+                        <img src="images/fsim.png" alt="Federated Learning Simulator">
+                        <div class="art-title">
+                            <p><b>Federated Learning Simulator</b></p>
+                            <p>Research platform for studying Byzantine-resilient decentralized and federated learning systems.</p>
+                            <p><a href="https://github.com/CGFrog/redundancy-byzantine">GitHub</a></p>
+                        </div>
+                    </div>
+
+                    <div class="art-card">
+                        <img src="images/graphing.png" alt="Graphing Calculator">
+                        <div class="art-title">
+                            <p><b>Graphing Calculator</b></p>
+                            <p>Graphing calculator that supports most single variable functions you would see in a calculus course.</p>
+                            <p><a href="https://github.com/CGFrog/graphing_calculator">GitHub</a></p>
+                        </div>
+                    </div>
+
+                    <div class="art-card">
+                        <img src="images/procomp.jfif" alt="Programming Competition Leaderboard">
+                        <div class="art-title">
+                            <p><b>Programming Competition Leaderboard</b></p>
+                            <p>Leaderboard used for university programming competitions.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="statusbar">
+        <span>© 2026 Ian Cooper</span>
+        <span>Last updated: November 2026</span>
+        <a href="#top">↑ Top</a>
+    </footer>
+
+</div>
 
 </body>
 </html>

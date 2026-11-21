@@ -7,29 +7,14 @@
 
     <link rel="stylesheet" href="../style.css">
 </head>
-<style>
-
-.video-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 16px;
-    margin-top: 10px;
-}
-
-.video-item p {
-    margin-top: 6px;
-    font-size: 0.9rem;
-    text-align: center;
-}
-</style>
 <body>
 
 <div class="container">
 
-    <header>
-        <h1>Ian Cooper - Music</h1>
-        <div class="subtitle">
-            Computer Science • Mathematics • 3D Graphics • Music
+    <header id="top">
+        <div>
+            <h1>Ian Cooper - Music</h1>
+            <div class="subtitle">Computer Science • Mathematics • 3D Graphics • Music</div>
         </div>
     </header>
 
@@ -39,145 +24,137 @@
         <a href="../programming/programming.html">Programming</a>
         <a href="../math/math.html">Mathematics</a>
         <a href="../games/games.html">Games</a>
-        <a href="music.html">Music</a>
-        <a href="../misc/misc.html">Misc</a>
-
+        <a href="music.html" aria-current="page">Music</a>
         <a href="mailto:iancoop25@gmail.com">Contact</a>
     </nav>
 
-    <div class="content-grid">
+    <main class="content-grid">
 
-        <section class="card">
-            <h2>Music</h2>
-            <p>
-                I make chiprock music, taking SID sounds and rock and seeing what cool sounds I can make with them.
-                I am heavily influenced by Kubbi, Anamanaguchi, and the J.Arthur Keenes Band, as well as bands like Megadeth, T-SQUARE, and Buckethead.
-                Have a listen and let me know what you think!
-            </p>
-            <p>
-                All of my music is free to use under CC BY-SA 4.0. No generative AI is used in any part of the song writing process.
-            </p>
-        </section>
+        <div class="stack">
+            <section>
+                <h2>Music</h2>
+                <div class="card">
+                    <p>
+                        I make chiprock music, taking SID sounds and rock and seeing what cool sounds I can make with them.
+                        I am heavily influenced by Kubbi, Anamanaguchi, and the J.Arthur Keenes Band, as well as bands like Megadeth, T-SQUARE, and Buckethead.
+                        Have a listen and let me know what you think!
+                    </p>
+                    <p>
+                        All of my music is free to use under CC BY-SA 4.0. No generative AI is used in any part of the song writing process.
+                    </p>
+                </div>
+            </section>
 
-        <section class="card">
+            <section>
+                <h2>Links</h2>
+                <div class="card">
+                    <ul>
+                        <li><a href="https://open.spotify.com/artist/6HlsiRf0mMAWnsk6GPsDUW?si=Q4lljQQpTHmtmfvD3j6eYg">Spotify</a> (releases)</li>
+                        <li><a href="https://cgfrog.bandcamp.com/music">Bandcamp</a> (albums &amp; free downloads)</li>
+                        <li><a href="https://soundcloud.com/cgfrog">SoundCloud</a> (archive / sketches)</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <section>
             <h2>Listen</h2>
-            <iframe style="border-radius:12px"
-                src="https://open.spotify.com/embed/artist/6HlsiRf0mMAWnsk6GPsDUW?utm_source=generator"
-                width="100%" height="352" frameborder="0" allowfullscreen="" allowtransparency="true"
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-            </iframe>
-        </section>
-
-        <section class="card">
-            <h2>Links</h2>
-
-            <div class="link-list">
-                <a href="https://open.spotify.com/artist/6HlsiRf0mMAWnsk6GPsDUW?si=Q4lljQQpTHmtmfvD3j6eYg">Spotify (releases)</a>
-                <a href="https://cgfrog.bandcamp.com/music">Bandcamp (albums & free downloads)</a>
-                <a href="https://soundcloud.com/cgfrog">SoundCloud (archive / sketches)</a>
+            <div class="card">
+                <iframe
+                    src="https://open.spotify.com/embed/artist/6HlsiRf0mMAWnsk6GPsDUW?utm_source=generator"
+                    width="100%" height="352" style="border: 0; display: block;"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                </iframe>
             </div>
         </section>
 
-<section>
-    <h2>Music Videos</h2>
+        <section class="wide">
+            <h2>Music Videos</h2>
+            <div class="card">
+                <div class="gallery">
 
-    <p>
-        
-    </p>
+                    <div class="art-card video-card">
+                        <iframe
+                            src="https://www.youtube.com/embed/_ir3PzMCivk"
+                            title="Ryan's Fridge Live"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <div class="art-title">Ryan's Fridge (Live)</div>
+                    </div>
 
-    <div class="gallery">
+                    <div class="art-card video-card">
+                        <iframe
+                            src="https://www.youtube.com/embed/zzLo2BkC1as"
+                            title="Ryan's Fridge"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <div class="art-title">Ryan's Fridge</div>
+                    </div>
 
-        <div class="art-card video-card">
-            <iframe
-                src="https://www.youtube.com/embed/_ir3PzMCivk"
-                title="Ryan's Fridge Live"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-            <div class="art-title">
-                Ryan's Fridge (Live)
-            </div>
-        </div>
+                    <div class="art-card video-card">
+                        <iframe
+                            src="https://www.youtube.com/embed/eIiMZZtM9i4"
+                            title="Axis"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <div class="art-title">Axis</div>
+                    </div>
 
-        <div class="art-card video-card">
-            <iframe
-                src="https://www.youtube.com/embed/zzLo2BkC1as"
-                title="Ryan's Fridge"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-            <div class="art-title">
-                Ryan's Fridge
-            </div>
-        </div>
+                    <div class="art-card video-card">
+                        <iframe
+                            src="https://www.youtube.com/embed/5DArjAjDCEM"
+                            title="Synthesis"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <div class="art-title">Synthesis</div>
+                    </div>
 
-        <div class="art-card video-card">
-            <iframe
-                src="https://www.youtube.com/embed/eIiMZZtM9i4"
-                title="Axis"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-            <div class="art-title">
-                Axis
-            </div>
-        </div>
+                    <div class="art-card video-card">
+                        <iframe
+                            src="https://www.youtube.com/embed/g0CiG4rx5tg"
+                            title="Tax Returns"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <div class="art-title">Tax Returns: 24-hour composition + animation challenge</div>
+                    </div>
 
-        <div class="art-card video-card">
-            <iframe
-                src="https://www.youtube.com/embed/5DArjAjDCEM"
-                title="Synthesis"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-            <div class="art-title">
-                Synthesis
-            </div>
-        </div>
+                    <div class="art-card video-card">
+                        <iframe
+                            src="https://www.youtube.com/embed/xDY2PBzUeyk"
+                            title="Soothsayer"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <div class="art-title">Soothsayer - Improvised Cover of Buckethead</div>
+                    </div>
 
-        <div class="art-card video-card">
-            <iframe
-                src="https://www.youtube.com/embed/g0CiG4rx5tg"
-                title="Tax Returns"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-            <div class="art-title">
-                Tax Returns: 24-hour composition + animation challenge
+                    <div class="art-card video-card">
+                        <iframe
+                            src="https://www.youtube.com/embed/tZ9eDo3RTTM"
+                            title="UWW Hackathon 2025 music video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                        <div class="art-title">uww hackathon 2025 music video. We made a guitar pedal plugin and made a song with it.</div>
+                    </div>
+
+                </div>
             </div>
-        </div>
-        <div class="art-card video-card">
-            <iframe
-                src="https://www.youtube.com/embed/xDY2PBzUeyk"
-                title="Soothsayer"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-            <div class="art-title">
-                Soothsayer - Improvised Cover of Buckethead
-            </div>
-        </div>
-        <div class="art-card video-card">
-            <iframe
-                src="https://www.youtube.com/embed/tZ9eDo3RTTM"
-                title="Soothsayer"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-            <div class="art-title">
-                uww hackathon 2025 music video. We made a guitar pedal plugin and made a song with it.
-            </div>
-        </div>
-    </div>
-</section>
-    </div>
+        </section>
+
+    </main>
+
+    <footer class="statusbar">
+        <span>© 2026 Ian Cooper</span>
+        <span>Last updated: November 2026</span>
+        <a href="#top">↑ Top</a>
+    </footer>
+
 </div>
 
 </body>
