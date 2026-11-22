@@ -6,7 +6,6 @@
     --shadow: #808080;
     --dark: #0a0a0a;
     --navy: #000080;
-    --title-end: #1084d0;
     --link: #0000ee;
     --visited: #551a8b;
 
@@ -29,7 +28,6 @@ html {
 
 body {
     margin: 0;
-    padding: 24px 16px;
     background: var(--desktop);
     color: #000;
     font-family: "Times New Roman", Times, serif;
@@ -38,16 +36,17 @@ body {
 
 /* ---------- main window ---------- */
 .container {
-    max-width: 1040px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     padding: 3px;
     background: var(--face);
-    box-shadow: var(--raised), 4px 4px 0 rgba(0, 0, 0, 0.35);
+    box-shadow: var(--raised);
 }
 
 header {
     padding: 14px 16px;
-    background: linear-gradient(to right, var(--navy), var(--title-end));
+    background: var(--navy);
     color: #fff;
 }
 
@@ -104,9 +103,11 @@ nav a[aria-current="page"] {
 /* ---------- layout ---------- */
 .content-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+    flex: 1;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
     padding: 16px;
+    align-content: start;
     align-items: start;
 }
 
@@ -131,7 +132,7 @@ section {
 section > h2 {
     margin: 0 0 3px;
     padding: 3px 6px;
-    background: linear-gradient(to right, var(--navy), var(--title-end));
+    background: var(--navy);
     color: #fff;
     font: bold 14px var(--ui-font);
 }
@@ -310,15 +311,13 @@ iframe {
 }
 
 /* ---------- small screens ---------- */
+@media (max-width: 693px) {
+    .content-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
 @media (max-width: 640px) {
-    body {
-        padding: 0;
-    }
-
-    .container {
-        box-shadow: var(--raised);
-    }
-
     header h1 {
         font-size: 30px;
     }
